@@ -5,7 +5,7 @@ public class MovieManager {
     private int limit;
 
     public MovieManager() {
-        this.limit = 10;
+        this.limit = 7;
     }
 
     public void MovieManager(int limit) {
@@ -21,11 +21,11 @@ public class MovieManager {
         films = tmp;
     }
 
-    public String[] findall() {
+    public String[] findAll() {
         return films;
     }
 
-    public String[] findlast() {
+    public String[] findLast() {
         int resultlength;
         if (films.length < limit) {
             resultlength = films.length;
@@ -40,4 +40,3 @@ public class MovieManager {
         return tmp;
     }
 }
-
